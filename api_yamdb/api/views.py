@@ -16,17 +16,10 @@ from api_yamdb.settings import DOMAIN_NAME
 
 from .filters import TitleFilter
 from .permissions import AdminOrReadOnly, IsAdmin, StaffOrAuthorOrReadOnly
-from .serializers import (
-    AdminSerializer,
-    CategorySerializer,
-    CommentSerializer,
-    GenreSerializer,
-    ReviewSerializer,
-    SignupSerializer,
-    TitleDisplaySerializer,
-    TitleSerializer,
-    TokenSerializer,
-)
+from .serializers import (AdminSerializer, CategorySerializer,
+                          CommentSerializer, GenreSerializer, ReviewSerializer,
+                          SignupSerializer, TitleDisplaySerializer,
+                          TitleSerializer, TokenSerializer)
 
 User = get_user_model()
 
