@@ -46,7 +46,7 @@ class Command(BaseCommand):
             model.objects.create(**new_row)
 
     def handle(self, *args, **kwargs):
-        FILES_DIR = os.path.join(settings.STATICFILES_DIRS[0], "data")
+        files_dir = os.path.join(settings.STATICFILES_DIRS[0], "data")
 
         # Надежнее вручную установить порядок обработки файлов,
         # т.к. они могут зависеть от данных в других файлах
@@ -66,7 +66,7 @@ class Command(BaseCommand):
             if not hasattr(models, model_name):
                 continue
 
-            file_path = os.path.join(FILES_DIR, filename)
+            file_path = os.path.join(files_dir, filename)
             with open(file_path, encoding="UTF-8") as csv_file:
                 csv_reader = csv.reader(csv_file, delimiter=",")
                 fields, values = [], []
