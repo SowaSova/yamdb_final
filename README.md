@@ -46,4 +46,3 @@ docker-compose exec web python manage.py collectstatic --no-input
 ```
 docker-compose exec web python manage.py loaddata fixtures.json
 ```
-#### Подробная документация доступна по адресу http:///project-test.ddns.net/redoc/
