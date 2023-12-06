@@ -1,6 +1,8 @@
-# Проект YaMDB
+# Проект YaMDb
 
 ![Status](https://github.com/SowaSova/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
+Расширение для проекта [YaMDb](https://github.com/SowaSova/api_yamdb) с использованием Docker и docker compose
 
 Проект YaMDb собирает __отзывы (Review)__ пользователей на __произведения (Titles)__. Произведения делятся на категории: «Книги», «Фильмы», «Музыка». Список __категорий (Category)__ может быть расширен (например, можно добавить категорию «Изобразительное искусство» или «Ювелирка»).
 
